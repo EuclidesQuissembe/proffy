@@ -1,0 +1,31 @@
+{
+  "name": "EuclidesQuissembe/proffy",
+  "description": "Proffy, a sua plataforma de estudo online",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Euclides Bernardo",
+      "email": "euclidesquissembebernado@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/Helpers.php"
+    ]
+  },
+  "require": {
+    "php": "^7.2",
+    "coffeecode/router": "1.0.7",
+    "coffeecode/optimizer": "2.0.1",
+    "league/plates": "4.0.0-alpha",
+    "ext-mbstring": "*",
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "coffeecode/paginator": "^1.0"
+  }
+}

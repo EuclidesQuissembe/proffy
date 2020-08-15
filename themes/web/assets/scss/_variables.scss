@@ -1,0 +1,26 @@
+// Colors
+$another_purple: #9871f5;
+$purple: #8257e5;
+$little_purple: #774dd6;
+$purple_dark: #6842c2;
+$green: #04d361;
+$title: #32264d;
+$white: #ffffff;
+$hover: #EBEBF5;
+$gray: #f0f0f7;
+$lines: #e6e6f0;
+$l: #fafafc;
+$complements: #9c98a6;
+$base: #d4c2ff;
+
+$sides: () !default;
+
+$sides: map-merge(
+  (
+    "t": "top",
+    "r": "right",
+    "b": "bottom",
+    "l": "left",
+  ),
+  $sides
+);

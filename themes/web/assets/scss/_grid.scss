@@ -1,0 +1,52 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  div.remove {
+    display: none;
+    text-align: right;
+
+    .remove {
+      color: red;
+      font-size: 9pt;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+[class*="clone-"] {
+  div.remove {
+    display: block;
+  }
+}
+
+[class^="col-"] {
+  padding: 5px;
+}
+
+@media (max-width: 512px) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      width: container($i);
+    }
+  }
+}
+
+@media (min-width: 512px) and (max-width: 768px) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      width: container($i);
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      width: container($i);
+    }
+  }
+}

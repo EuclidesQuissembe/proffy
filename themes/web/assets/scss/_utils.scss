@@ -1,0 +1,41 @@
+.d-flex {
+  display: flex;
+}
+
+.content-space-between {
+  justify-content: space-between;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.d-row {
+  flex-direction: row;
+}
+
+.d-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.text-base {
+  color: $base;
+  font-size: 10pt;
+}
+
+@include paddings;
+@include pad-vertical;
+@include margins;
+@include mar-vertical;

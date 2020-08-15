@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Listagem</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body class="bg-gray">
+  <nav class="navbar bg-purple">
+    <div>
+      <a href="#">
+        <img src="assets/img/Voltar.png" alt="Voltar" />
+      </a>
+      <p><img src="assets/img/Proffy.png" alt="Proffy" /></p>
+    </div>
+  </nav>
+
+  <header id="main-header" class="bg-purple pb-5">
+    <div class="container text-white">
+      <h1 class="title-page pt-3 mb-5">Esses são os proffys disponíveis</h1>
+    </div>
+  </header>
+  <main>
+    <section class="container position-relative pt-5">
+      <div class="row over">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <label class="min" for="matter">Matéria</label>
+          <select name="matter" id="matter" class="form-control" required>
+            <option value="">Selecione qual você quer ensinar</option>
+          </select>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <label class="min" for="week">Dia da semana</label>
+          <select name="week" id="week" class="form-control" required>
+            <option value="">Selecione o dia</option>
+            <option value="sunday">Domingo</option>
+            <option value="monday">Segunda-feira</option>
+            <option value="tuesday">Terça-feira</option>
+            <option value="wednesday">Quarta-feira</option>
+            <option value="thursday">Quinta-feira</option>
+            <option value="friday">Sexta-feira</option>
+            <option value="saturday">Sábado</option>
+          </select>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <label class="min" for="hour">Horário</label>
+          <input type="time" id="hour" name="hour" maxlength="5" placeholder="00:00" class="form-control">
+        </div>
+      </div>
+      <ul class="list-cards">
+        <li class="list-item">
+          <article>
+            <div class="p-3">
+              <div class="list-top">
+                <img src="assets/img/profile.jpg" class="list-image" alt="Profile" />
+                <div class="ml-2">
+                  <h3>Euclides Bernardo</h3>
+                  <h5>Programação</h5>
+                </div>
+              </div>
+              <div class="mt-3">
+                <p>Entusiasta das melhores tecnologias de química avançada.</p>
+                <p>
+                  Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências.
+                  Mais de 200.000 pessoas já passaram por uma das minhas explosões.
+                </p>
+              </div>
+            </div>
+            <div class="form-footer">
+              <div class="row">
+                <div class="row align-items-center col-lg-7">
+                  <span class="price-desc">preço/hora</span> <span class="price ml-1">KZ 1.000</span>
+                </div>
+                <a href="#" class="btn btn-contact col-lg-5">
+                  <img src="assets/img/Whatsapp.svg" alt="Whatsapp icon">
+                  <span class="ml-1">Entrar em contacto</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <div class="d-flex content-center align-items-center">
+        <p class="empty">Nenhum professor encontrado com sua pesquisa.</p>
+      </div>
+
+
+    </section>
+  </main>
+</body>
+
+</html>

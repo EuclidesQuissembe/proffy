@@ -1,0 +1,112 @@
+.titles {
+  color: $title;
+}
+
+.over {
+  position: absolute;
+  width: 100%;
+  top: -45px;
+}
+
+form {
+  position: absolute;
+  width: 100%;
+  top: -45px;
+  border: 1px solid $lines;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.form-group {
+  margin: 25px 0;
+
+  .info {
+    display: none;
+  }
+
+  &.input-info {
+    .info {
+      display: block;
+      font-size: 10pt;
+      margin-left: 10px;
+    }
+
+    &.success {
+      .form-control {
+        border-color: #00b900;
+      }
+      .info,
+      label {
+        color: #00b900;
+      }
+    }
+
+    &.error {
+      .form-control {
+        border-color: #8b0000;
+      }
+      .info,
+      label {
+        color: #8b0000;
+      }
+    }
+  }
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.54rem 0.65rem;
+  font-size: 12pt;
+  border-radius: 5px;
+  border: 1px solid $lines;
+  background-color: $l;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  color: $complements;
+
+  &[type="text"]:focus,
+  &[type="url"]:focus,
+  &[type="number"]:focus {
+    border-bottom-color: $purple;
+  }
+}
+
+// .appearance-select{
+//   -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+//   -moz-appearance: none; /* Remove estilo padrão do FireFox */
+//   appearance: none; /* Remove estilo padrão do FireFox*/
+// }
+
+// .appearance-select option {
+
+//   -moz-background-color: $hover;
+//   -webkit-background-color: $hover;
+//   background-color: $hover;
+//   color: $base;
+
+//   &:hover {
+//     color: red;
+//   }
+// }
+
+label {
+  display: block;
+  color: $complements;
+
+  &.min {
+    font-size: 10pt;
+    color: $base;
+  }
+}
+
+.form-footer {
+  margin-top: 10px;
+  padding: 40px;
+  background-color: $l;
+  border-top: 1px solid $lines;
+
+  p {
+    font-size: 9pt;
+    color: #a0a0b2;
+  }
+}

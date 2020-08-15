@@ -1,0 +1,49 @@
+.list-item {
+  border: 1px solid $lines;
+  background-color: $white;
+  border-radius: 6px;
+  margin-bottom: 20px;
+
+  .list-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .list-image {
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+    }
+
+    h3 {
+      color: $title;
+    }
+
+    h5 {
+      margin-top: 3px;
+      color: #6a6180;
+      font-weight: 100;
+    }
+  }
+
+  p {
+    margin-top: 20px;
+    color: #6a6180;
+  }
+
+  .price-desc {
+    font-size: 10pt;
+  }
+
+  .price {
+    color: $purple;
+    font-weight: bold;
+  }
+}
+
+.empty {
+  width: 220px;
+  text-align: center;
+  margin-top: 100px;
+  color: $complements;
+}

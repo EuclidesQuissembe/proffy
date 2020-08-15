@@ -1,0 +1,71 @@
+
+@mixin paddings() {
+  @for $i from 1 through 5 {
+    .p-#{$i} {
+      padding: #{$i * 10}px;
+    }
+  }
+
+  @each $key, $value in $sides {
+    @for $i from 1 through 5 {
+      .p#{$key}-#{$i} {
+        padding-#{$value}: #{$i * 10}px;
+      }
+    }
+  }
+}
+
+@mixin margins() {
+  @for $i from 1 through 5 {
+    .m-#{$i} {
+      margin: #{$i * 10}px;
+    }
+  }
+
+  @each $key, $value in $sides {
+    @for $i from 1 through 5 {
+      .m#{$key}-#{$i} {
+        margin-#{$value}: #{$i * 10}px;
+      }
+    }
+  }
+}
+
+@mixin pad-vertical() {
+  @for $i from 1 through 5 {
+    .px-#{$i} {
+      padding-left: #{$i * 10}px;
+      padding-right: #{$i * 10}px;
+    }
+  }
+
+  @for $i from 1 through 5 {
+    .py-#{$i} {
+      padding-top: #{$i * 10}px;
+      padding-bottom: #{$i * 10}px;
+    }
+  }
+}
+
+@mixin mar-vertical() {
+  @for $i from 1 through 5 {
+    .mx-#{$i} {
+      margin-left: #{$i * 10}px;
+      margin-right: #{$i * 10}px;
+    }
+  }
+
+  @for $i from 1 through 5 {
+    .my-#{$i} {
+      margin-top: #{$i * 10}px;
+      margin-bottom: #{$i * 10}px;
+    }
+  }
+}
+
+@mixin transition($time, $property: '') {
+  -webkit-transition: $property $time;
+  -moz-transition: $property $time;
+  -o-transition: $property $time;
+  transition: $property $time;
+}

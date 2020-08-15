@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.container-fluid {
+  &-home {
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  .delete-hour {
+    position: absolute;
+    width: 350px;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: white;
+    z-index: 6;
+
+    p {
+      margin: 10px 0 30px;
+    }
+
+    div {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

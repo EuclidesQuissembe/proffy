@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar bg-purple">
+        <div>
+            <a href="#">
+                <img src="assets/img/Voltar.png" alt="Voltar" />
+            </a>
+            <p><img src="assets/img/Proffy.png" alt="Proffy" /></p>
+        </div>
+    </nav>
+
+    <header id="main-header" class="bg-purple pb-5">
+        <div class="container text-white">
+            <h1 class="title-page pt-3 mb-2">Que incrível que você quer dar aulas.</h1>
+            <p class="sub-title pb-4">O primeiro passo é preencher esse formulário de inscrição.</p>
+        </div>
+    </header>
+    <main class="bg-gray">
+        <section class="container position-relative">
+            <form action="http://localhost/proffy/server.php" class="bg-white" enctype="multipart/form-data">
+                <div class="p-4">
+                    <h3 class="titles">Seus dados</h3>
+                    <hr class="mt-1 mb-2">
+                    <div class="form-group ">
+                        <label for="full_name">Nome completo</label>
+                        <input type="text" id="full_name" name="full_name" class="form-control" required />
+                        <span class="info" id="info-name">Insira o seu nome</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo_link">Link da sua foto (comece com http://)</label>
+                        <input type="url" id="photo_link" name="photo_link" class="form-control" required />
+                        <span class="info">Insira o link para a fotografia</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">Whatsapp (apenas número)</label>
+                        <input type="text" id="whatsapp" name="whatsapp" class="form-control" required />
+                        <span class="info">Insira o link para a fotografia</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Biografia</label>
+                        <textarea id="bio" name="bio" class="form-control" rows="4" required></textarea>
+                        <span class="info">Informe a sua biografia</span>
+                    </div>
+                    <h3 class="titles">Sobre a aula</h3>
+                    <hr class="mt-1 mb-2">
+                    <div class="form-group">
+                        <label for="matter">Matéria</label>
+                        <select name="matter" id="matter" class="form-control" required>
+                            <option value="sssss">Selecione qual você quer ensinar</option>
+                        </select>
+                        <span class="info">Informe a sua biografia</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Custo da sua hora por aula (em KZ)</label>
+                        <input type="number" id="price" name="price" class="form-control" required />
+                    </div>
+                    <div class="row align-items-center">
+                        <h3 class="titles col-sm-9 col-md-9 col-lg-9">Horários disponíveis</h3>
+                        <button type="button" class="btn btn-add col-sm-3 col-md-3 col-lg-3 add">+ Novo horário</button>
+                    </div>
+                    <hr class="mt-1 mb-2">
+                    <div id="group">
+                        <div class="row mb-1">
+                            <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                                <label for="week">Dia da semana</label>
+                                <select name="week" id="week" class="form-control" required>
+                                    <option value="">Selecione o dia</option>
+                                    <option value="sunday">Domingo</option>
+                                    <option value="monday">Segunda-feira</option>
+                                    <option value="tuesday">Terça-feira</option>
+                                    <option value="wednesday">Quarta-feira</option>
+                                    <option value="thursday">Quinta-feira</option>
+                                    <option value="friday">Sexta-feira</option>
+                                    <option value="saturday">Sábado</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-2 col-lg-3">
+                                <label for="start">De</label>
+                                <input type="time" id="start" name="start" maxlength="5" class="form-control" required>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-2 col-lg-3">
+                                <label for="end">Até</label>
+                                <input type="time" id="end" name="end" maxlength="5" class="form-control" required>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 remove">
+                                <span class="remove">Remover</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <div class="row">
+                        <div class="row align-items-center col-lg-7">
+                            <img src="assets/img/Atenção.png" height="25" alt="Atencao" />
+                            <div class="flex ml-1">
+                                <p>Importante!</p>
+                                <p>Preencha todos os campos</p>
+                            </div>
+                        </div>
+                        <input type="submit" value="Salvar cadastro" class="btn btn-submit col-lg-5">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <div class="popup">
+        <div class="delete-hour">
+            <p>Desejas realmente remover esta coluna?</p>
+            <div>
+                <button class="btn-cancelar">Cancelar</button>
+                <button class="btn-remover">Remover</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

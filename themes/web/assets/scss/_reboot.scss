@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Archivo", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: 1px solid $lines;
+}
+
+li {
+  list-style-type: none;
+}

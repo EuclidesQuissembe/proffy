@@ -1,0 +1,3 @@
+@function container($grid) {
+  @return ($grid * 100%) / 12;
+}

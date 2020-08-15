@@ -1,0 +1,114 @@
+.btn {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 16pt;
+  font-weight: bold;
+  @include transition(0.4s, background-color);
+
+  &.btn-transparent,
+  &.btn-green {
+    width: 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    color: $white;
+  }
+
+  &.btn-transparent {
+    background: $another_purple;
+    &:hover {
+      background-color: darken($another_purple, 4);
+    }
+  }
+
+  &.btn-green {
+    background: $green;
+
+    &:hover {
+      background-color: darken($green, 4);
+    }
+  }
+}
+
+.btn-add {
+  padding: 10px 0;
+  font-size: 11pt;
+  color: $purple;
+  background-color: transparent;
+
+  &:hover {
+    color: darken($purple, 10);
+    cursor: pointer;
+  }
+}
+
+.btn-submit {
+  padding: 20px;
+  font-size: 11pt;
+  color: $white;
+  border-radius: 13px;
+  background-color: $green;
+
+  &.success {
+    background-color: $purple;
+    &:hover {
+      background-color: darken($purple, 5);
+    }
+  }
+
+  &:hover {
+    background-color: darken($green, 5);
+    cursor: pointer;
+  }
+}
+
+.btn-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px;
+  font-size: 11pt;
+  color: $white;
+  border-radius: 7px;
+  text-align: center;
+  background-color: $green;
+
+  &:hover {
+    background-color: darken($green, 5);
+    cursor: pointer;
+  }
+}
+
+.btn-cancelar,
+.btn-remover {
+  padding: 0.54rem 0.84rem;
+  border-radius: 3px;
+  border: none;
+  text-transform: uppercase;
+  @include transition(0.3s, background-color);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-remover {
+  background-color: #9e0000;
+  color: white;
+
+  &:hover {
+    background-color: darken(#9e0000, 7);
+  }
+}
+
+.btn-cancelar {
+  margin-right: 10px;
+  background-color: white;
+
+  &:hover {
+    background-color: darken($color: white, $amount: 4);
+  }
+}
